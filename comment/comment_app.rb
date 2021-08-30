@@ -6,7 +6,7 @@ require './helpers'
 require 'prometheus/client'
 require 'rufus-scheduler'
 
-mongo_host = ENV['COMMENT_DATABASE_HOST'] || '127.0.0.1'
+mongo_host = ENV['COMMENT_DATABASE_HOST'] || 'comment_db'
 mongo_port = ENV['COMMENT_DATABASE_PORT'] || '27017'
 mongo_database = ENV['COMMENT_DATABASE'] || 'test'
 

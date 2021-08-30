@@ -11,7 +11,7 @@ CONTENT_TYPE_LATEST = str('text/plain; version=0.0.4; charset=utf-8')
 REQUEST_DB_LATENCY = prometheus_client.Histogram('post_read_db_seconds', 'Request DB time')
 POST_COUNT = prometheus_client.Counter('post_count', 'A counter of new posts')
 
-mongo_host = os.getenv('POST_DATABASE_HOST', '127.0.0.1')
+mongo_host = os.getenv('POST_DATABASE_HOST', 'post_db')
 mongo_port = os.getenv('POST_DATABASE_PORT', '27017')
 mongo_database = os.getenv('POST_DATABASE', 'test')
 
